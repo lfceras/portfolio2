@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">LUIS</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="images/copia.png" alt="Not found" />
+        </div>
+        <h1>LUIS CERA</h1>
+        <h2>Full Stack Web Developer</h2>
+        <div class="redes">
+          <a href=" https://github.com/lfceras" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/luiscerasanjuan/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+
+          <!-- <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-section">
+        <h2>Sobre Mi</h2>
+        <p>
+          <span>Hola, soy Luis Cera</span> una persona siempre dispuesta a
+          aprender y afrontar grandes desafios. Soy Desarrollador Web Fullstack,
+          egresado del Bootcamp SoyHenry, con mas de 700 Horas de aprendizaje en
+          Tecnologias de Programacion Web. Asi mismo me apasiona el aprendizaje
+          constante de diversas tecnologias. Soy una persona que le gusta
+          trabajar en equipo para llegar a objetivos en comun y siempre ser
+          activo en ayudar a quien necesite de mi ayuda, tambien me gusta
+          escuchar a todos aquellos que lo necesiten. Tambien me gusta escuchar
+          a todos aquellos que quieran orientarme para llegar a un objetivo en
+          comun de forma mas eficiente y en el menor tiempo posible
+        </p>
+
+        <div class="fila">
+          <!-- Datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                02- 11- 1991
+              </li>
+              <li>
+                <strong>Telefono</strong>
+                +57 322 645 5432
+              </li>
+              <li>
+                <strong>Email</strong>
+                lcerasanjuan@gmail.com
+              </li>
+              <!-- <li>
+                <strong>Website</strong>
+                www.pruebas.com
+              </li> -->
+              <li>
+                <strong>Direccion</strong>
+                Medellin, Antioquia - Colombia
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>Software Developer</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <!-- <div class="interes">
+                <i class="fa-solid fa-futbol"></i>
+                <span>FUTBOL</span>
+              </div> -->
+              <div class="interes">
+                <i class="fa-solid fa-basketball"></i>
+                <span>BASKET</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <!-- <div class="interes">
+                <i class="fa-solid fa-motorcycle"></i>
+                <span>MOTOS</span>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <button>
+          <a href="./images/curriculumv.pdf" download="Curriculum PDF"
+            >Descargar CV</a
+          >
+          <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+
+    <section id="skills" class="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skills -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Redux</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>React js</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicacion</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Dedicacion</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM  -->
+
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educacion</h3>
+            <div class="item izq">
+              <h4>Full Stack Web Developer</h4>
+              <span class="casa">Bootcamp SoyHenry</span>
+              <span class="fecha">(Ene 2022 - Dic 2022</span>
+              <p>
+                Aprendizaje de manera teorica y practica con mas de 700 horas de
+                en las siquientes tecnologias:
+              </p>
+              <ul>
+                <li>Javascript</li>
+                <li>React js</li>
+                <li>Redux</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Node js</li>
+                <li>Express js</li>
+                <li>Sequelize</li>
+                <li>Postgres MySQL</li>
+              </ul>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Tecnico en nomina y prestaciones sociales</h4>
+              <span class="casa">Servicio Nacional de Aprendizaje(SENA)</span>
+              <span class="fecha">Mar 2016 - Mar 2017</span>
+              <ul>
+                <li>
+                  Consultar y liquidar de manera eficiente todo lo referente a
+                  saldos generados por la empresa.
+                </li>
+                <li>
+                  Llevar de manera ordenada y controlada los registros de las
+                  operaciones mercantiles realizadas por la empresa.
+                </li>
+              </ul>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Bachiller con Profundizacion en Educacion</h4>
+              <span class="casa"
+                >Escuela Normal Superior de Manati(Atlantico)</span
+              >
+              <span class="fecha">2005 - 2010</span>
+              <p>Formacion de Educacion Secundaria</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de Trabajo</h3>
+            <div class="item der">
+              <h4>Soy Henry Bootcamp</h4>
+              <span class="casa">Proyecto Indivdual </span>
+              <span class="fecha">Oct 2022 - Nov 2022</span>
+              <p>
+                Diseño y desarrollo de una aplicacion web basada en Paises,
+                aplicando filtros, ordenamientos, creacion, actualizacion y
+                eliminado de base de datos. Tecnologias: React js, Redux, Node
+                js, Express js, MySQL, Sequelize con Postgres. Experiencia:
+                Manejo y aplicacion de todo lo aprendido durante la cursada con
+                practicas e integracion entre tecnologias.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+
+            <div class="item der">
+              <h4>Soy Henry Bootcamp</h4>
+              <span class="casa">Proyecto Grupal</span>
+              <span class="fecha">Nov 2022 - Dic 2022</span>
+              <p>
+                Diseño y desarrollo de un E-commerce dedicado a la venta de
+                productos para el Asados, experiencia de usuario y manejo del
+                comercio por parte del administrador. Tecnologias: React js,
+                Redux, Node js, Express js, Mongo Db, Firebase. Experiencia:
+                Integracion de diversas librerias como firebase para la
+                autenticacion, tailwind css y nodemailer, etc. Por otro lado
+                aplicamos metodologias agiles de trabajo en equipo tipo scrum
+                para el objetivo general.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+
+            <!-- <div class="item der">
+              <h4>Diseño UI/XI</h4>
+              <span class="casa">Cualquier Empresa</span>
+              <span class="fecha">2000 - 2006</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque eos quaerat nisi nihil, asperiores voluptas dolorum
+                tenetur voluptatibus repellat eveniet quasi hic, illo at?
+                Laborum necessitatibus dolor reiciendis hic iure.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO  -->
+
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>Portfolio</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="images/DD.jpg" alt="Not found" />
+            <div class="overlay">
+              <a href="https://henry-pf-iota.vercel.app/" target="_blank">
+                <h3>Proyecto Grupal</h3>
+                <p>Dos Dagas</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="images/countries.jpg" alt="Not found" />
+            <div class="overlay">
+              <h3>Proyecto Individual</h3>
+              <p>Countries</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="images/Breaking-bad2.jpg" alt="Not found" />
+            <div class="overlay">
+              <h3>Proyecto Repaso</h3>
+              <p>Breaking Bad</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="images/rick5.jpg" alt="Not found" />
+            <div class="overlay">
+              <h3>Proyecto Repaso</h3>
+              <p>Rick and Morty</p>
+            </div>
+          </div>
+
+          <!-- <div class="proyecto">
+            <img src="images/p5.jpg" alt="Not found" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <img src="images/p6.jpg" alt="Not found" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografia</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>Contacto</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <form name="contact-form" netlify>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Tu Nombre"
+              />
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Numero telefonico"
+              />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Direccion de correo"
+              />
+              <input type="text" id="tema" name="asunto" placeholder="Tema" />
+              <textarea
+                name="textarea"
+                id="textarea"
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+              ></textarea>
+              <button type="submit">
+                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="images/ubicacion.png" alt="Not found" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Medellin, Antioquia - Colombia
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Telefono: +57 322 645 5432
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: lcerasanjuan@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href=" https://github.com/lfceras" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/luiscerasanjuan/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <!-- <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a> -->
+      </div>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="script.js"></script>
+  </body>
+</html>
